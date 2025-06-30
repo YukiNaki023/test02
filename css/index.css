@@ -1,0 +1,790 @@
+@charset "utf-8";
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+@font-face {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: 'GangwonEduPowerExtraBoldA';
+}
+
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+header {
+    position: relative;
+    /* 기준 */
+
+}
+
+#wrap {
+    width: 100%;
+    /* height: 3500px; */
+}
+
+.inner {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+/* ------------------- */
+
+header {
+    /* width: 1920; */
+    /* height: 133px; */
+    position: relative;
+    display: flex;
+}
+
+.login-btn.pc-only {
+    position: absolute;
+    top: 50px;
+    right: 150px;
+}
+
+.login-btn.pc-only a {
+    display: inline-block;
+    padding: 8px 16px;
+    /* background-color: #6a5acd; */
+    color: rgb(104, 99, 99);
+    border-radius: 4px;
+    /* font-weight: bold; */
+    text-decoration: none;
+}
+
+.mobile-logo {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.mobile-logo p {
+    font-size: 12px;
+}
+
+.mobile-logo img {
+    max-width: 150px;
+    height: auto;
+    top: 5px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu li a {
+    display: block;
+    width: 130px;
+    text-align: center;
+}
+
+.menu {
+    margin-top: 50px;
+}
+
+/* ------------------------------ */
+menu li {
+    position: relative;
+    display: none;
+}
+
+.menu>ul>li>a,
+.menu li>a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+.menu .hover-menu01,
+.menu .hover-menu02,
+.menu .hover-menu03,
+.menu .hover-menu04,
+.menu .hover-menu05,
+.menu .hover-menu06 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #b4b1b1;
+    z-index: 1000;
+    /* min-width: 180px; */
+}
+
+.menu .hover-menu01 ul,
+.menu .hover-menu02 ul,
+.menu .hover-menu03 ul,
+.menu .hover-menu04 ul,
+.menu .hover-menu05 ul,
+.menu .hover-menu06 ul {
+    margin: 0;
+    padding: 0;
+}
+
+.menu .hover-menu01 ul li a,
+.menu .hover-menu02 ul li a,
+.menu .hover-menu03 ul li a,
+.menu .hover-menu04 ul li a,
+.menu .hover-menu05 ul li a,
+.menu .hover-menu06 ul li a {
+    display: block;
+    padding: 10px;
+    color: rgb(94, 92, 91);
+    text-decoration: none;
+    background-color: bisque;
+}
+
+.menu .hover-menu01 ul li a:hover,
+.menu .hover-menu02 ul li a:hover,
+.menu .hover-menu03 ul li a:hover,
+.menu .hover-menu04 ul li a:hover,
+.menu .hover-menu05 ul li a:hover,
+.menu .hover-menu06 ul li a:hover {
+    background-color: #a8987e;
+}
+
+/* 마우스 호버 시 서브 메뉴 보이기 */
+.menu li:hover .hover-menu01,
+.menu li:hover .hover-menu02,
+.menu li:hover .hover-menu03,
+.menu li:hover .hover-menu04,
+.menu li:hover .hover-menu05,
+.menu li:hover .hover-menu06 {
+    display: block;
+    transition: all 0.4s;
+}
+
+/* 여기서 햄버튼----------------------------------- */
+
+.ham-btn {
+    /* border: 1px solid violet; */
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+}
+
+.ham-btn span {
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: burlywood;
+    transition: all 0.3s;
+}
+
+.ham-btn span:nth-child(1) {
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ham-btn span:nth-child(2) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ham-btn span:nth-child(3) {
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.ham-btn.on span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ham-btn.on span:nth-child(2) {
+    opacity: 0;
+}
+
+.ham-btn.on span:nth-child(3) {
+    bottom: 50%;
+    transform: translate(-50%, 50%) rotate(-45deg);
+}
+
+/* .ham-btn {
+    display: none;
+} */
+.ham-btn {
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    /* 초기 위치 */
+    /* 위치는 원래 있던 곳에 두기 */
+    top: -25px;
+    background-color: gainsboro;
+    display: none;
+}
+
+.ham-btn span {
+    display: block;
+    height: 4px;
+    background-color: black;
+    border-radius: 2px;
+}
+
+/* 고정될 때 스타일 */
+.ham-btn.fixed {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    background-color: white;
+    /* 필요하면 배경색 추가 */
+    padding: 5px;
+    /* 필요하면 약간 여백 */
+    border-radius: 4px;
+    /* 둥근 모서리 */
+}
+
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    /* 시작 위치: 왼쪽 화면 밖 */
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    z-index: 1000;
+    padding: 20px;
+    transition: left 0.3s ease;
+    /* 필수: 부드러운 슬라이드 효과 */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.ham-btn.moblie {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1001;
+
+    padding: 5px;
+    background: gainsboro;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 햄버거 버튼 클릭 시 메뉴 활성화 */
+.mobile-menu.active {
+    left: 0;
+}
+
+/* 여기까지 햄버튼 */
+
+/* ---------------------------------------------- */
+.menu li:hover>a {
+    background-color: bisque;
+}
+
+.hover-menu01 {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+.ab01 {
+    position: relative;
+}
+
+.hover-menu01 ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    margin-top: 10px;
+}
+
+.ab02 {
+    position: relative;
+}
+
+.hover-menu02 ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    margin-top: 10px;
+}
+
+.ab03 {
+    position: relative;
+}
+
+.hover-menu03 ul {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.ab04 {
+    position: relative;
+}
+
+.hover-menu04 ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.ab05 {
+    position: relative;
+}
+
+.hover-menu05 ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 100;
+}
+
+.ab06 {
+    position: relative;
+}
+
+.hover-menu06 ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 100;
+}
+
+/* --------------여기까지 메뉴 */
+.swiper {
+    width: 100%;
+    height: 512px;
+}
+
+.all-slide {
+    display: none;
+}
+
+.all-slide.on {
+    display: block;
+}
+
+.post-slide {
+    width: 100%;
+    height: 650px;
+}
+
+.menu02 {
+    background-color: bisque;
+    height: 128px;
+    width: 100%;
+    /* display: flex; */
+}
+
+.menu02 ul {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-weight: bold;
+}
+
+.menu02 li {
+    display: flex;
+    margin-top: 25px;
+    border-left: 2px solid gray;
+}
+
+.menu02 li p {
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.menu02 a {
+    display: flex;
+    margin-left: 30px;
+}
+
+.menu02 a:hover p {
+    color: rgb(89, 195, 236);
+    transition: all 0.3s;
+}
+
+/* ------------여기까지 두번째 메뉴 --------*/
+
+.post-slide ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.title {
+    padding-top: 20px;
+}
+
+.title p {
+    margin-left: 45px;
+}
+
+.all {
+    height: 650px;
+    background-color: rgb(243, 219, 223);
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.post-slide {
+    background-color: rgb(243, 219, 223);
+    height: 650px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.swiper.post-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.post-slide img:hover {
+    filter: brightness(70%);
+    transition: filter 0.3s ease;
+}
+
+.post-slide h2 {
+    padding-top: 20px;
+}
+
+.post-slide ul h3 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.post-slide>p {
+    margin-left: 45px;
+}
+
+/* -----여기까지 사업소게------ */
+.notice {
+    display: flex;
+    /* margin: 30px; */
+}
+
+.notice .notice-tab {
+    width: 712px;
+    height: 338px;
+    background-color: rgb(243, 237, 237);
+    /* margin-left: 20px; */
+    border-radius: 15px;
+}
+
+.notice-tab li {
+    padding: 15px;
+}
+
+.notice-ma {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.notice-ma li.active {
+    background-color: skyblue;
+    border-radius: 4px;
+}
+
+.notice-ma li.active a {
+    color: white;
+    font-weight: bold;
+}
+
+.notice-ma li.active {
+    background-color: skyblue;
+    border-radius: 4px;
+}
+
+.notice-ma li.active a {
+    color: #333;
+    font-weight: bold;
+}
+
+#tabb li {
+    border-bottom: 1px solid black;
+    margin-left: 20px;
+    
+}
+
+#tabb-02 {
+    display: none;
+    margin: 5px;
+    margin-left: 20px;
+}
+
+#tabb-02 li {
+    border-bottom: 1px solid black;
+    /* margin: 5px; */
+}
+
+#tabb-03 {
+    margin: 5px;
+    margin-left: 20px;
+}
+
+#tabb-03 li {
+    border-bottom: 1px solid black;
+}
+
+#tabb-02.on {
+    display: block;
+}
+
+#tabb-03 {
+    display: none;
+}
+
+.notice .notice-tab>ul {
+    display: flex;
+}
+
+/* ------------------여기까지 공지사항 */
+
+.cw {
+    display: block;
+}
+
+.yutube {
+    margin-left: 20px;
+}
+
+.yutube-moba {
+    display: none;
+}
+
+.yutube img {
+    border-radius: 15px;
+}
+
+.zip {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.zip-moba {
+    display: none;
+}
+
+.zip ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.zip ul p {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.zip h2 {
+    padding-bottom: 40px;
+}
+
+.zip img:hover {
+    filter: brightness(70%);
+    transition: filter 0.3s ease;
+}
+
+/* 여기부터 챗지피티가 써준 zip파트 코드 */
+.zip-moba {
+    display: none;
+}
+
+.zip-moba img {
+    width: 200px;
+    height: auto;
+    display: flex;
+}
+
+/* 여기까지가 챗지피티가 써준 zip파트 코드 */
+
+h2 {
+    margin-left: 45px;
+}
+
+.art {
+    display: flex;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.art img {
+    border-radius: 25px;
+    width: 940px;
+    margin: 5px;
+}
+
+.art p {
+    text-align: center;
+    font-size: 30px;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.art-moba {
+    display: none;
+}
+
+/* --------art챗지피티--------- */
+.art-moba {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* padding: 15px; */
+}
+
+.img-box {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.img-box img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+.img-title01 {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(247, 171, 215, 0.6);
+    color: white;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.img-title {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(130, 179, 236, 0.6);
+    color: white;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.art-moba {
+    display: none;
+}
+
+/* -------------- */
+
+.btnA {
+    position: relative;
+}
+
+.btnA .a-1 {
+    margin-left: 350px;
+    position: relative;
+    top: -70px;
+    font-weight: bold;
+}
+
+.btnA p {
+    position: absolute;
+    margin-left: 350px;
+    top: -120px;
+    padding: 15px;
+    background-color: skyblue;
+    color: white;
+}
+
+.btnB {
+    position: relative;
+}
+
+.btnB .a-2 {
+    position: relative;
+    left: 360px;
+    top: -70px;
+    font-weight: bold;
+}
+
+.btnB p {
+    margin-left: 370px;
+    position: absolute;
+    top: -120px;
+    background-color: pink;
+    color: white;
+    padding: 15px;
+}
+
+/* -----------------여기서부터 푸터-------- */
+.footer-all {
+    width: 100%;
+    background-color: gray;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.foot-top {
+    width: 100%;
+    padding: 15px 0;
+    background-color: rgba(0, 0, 0, 0.49);
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    /* 메뉴 사이 간격 */
+}
+
+.foot-top a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-logo {
+    margin: 25px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.footer-logo img {
+    height: 40px;
+    object-fit: contain;
+    /* margin, position 삭제 */
+}
+
+.footer-p {
+    max-width: 480px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}

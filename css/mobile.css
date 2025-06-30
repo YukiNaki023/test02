@@ -1,0 +1,342 @@
+@charset "utf-8";
+
+@media all and (max-width:1600px) {
+    .inner {
+        width: calc(100% - 40px);
+    }
+}
+
+@media all and (max-width:1280px) {}
+
+/* 태블릿 */
+@media all and (max-width: 1024px) {}
+
+/* 모바일시작점 */
+@media all and (max-width:767px) {
+    #wrap {
+        width: 412px;
+        height: 915px;
+    }
+
+    section {
+        height: auto;
+    }
+
+    header {
+        width: 412px;
+        height: 44px;
+    }
+
+    header h1 img {
+        width: 75px;
+        height: 40px;
+        margin-left: 160px;
+    }
+
+    .ham-btn.moblie {
+        display: block;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1001;
+        cursor: pointer;
+    }
+
+    /* 여기부터 햄버튼 */
+    /* .ham-btn {
+        display: none;
+      } */
+    .ham-btn {
+        display: block;
+        z-index: 10000;
+    }
+
+    /* 데스크톱용 메뉴 숨기기 */
+    header nav .menu {
+        display: none;
+    }
+
+
+
+    /* (선택 사항) 모바일 메뉴 내부의 ul/li/a 기본 스타일 */
+    .mobile-menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .mobile-menu ul li {
+        border-bottom: 1px solid #eee;
+        /* 하단 선 추가 */
+    }
+
+    .mobile-menu ul li a {
+        display: block;
+        padding: 15px 20px;
+        color: #333;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .mobile-menu ul li a:hover {
+        background-color: #f0f0f0;
+    }
+
+    /* 서브 메뉴 스타일 (depth 2) */
+    .mobile-menu ul ul {
+        padding-left: 20px;
+        background-color: #f9f9f9;
+    }
+
+    .mobile-menu ul ul li {
+        border-bottom: none;
+        /* 서브 메뉴에는 하단 선 제거 */
+    }
+
+    .mobile-menu ul ul li a {
+        padding: 10px 20px;
+        font-weight: normal;
+        color: #555;
+        font-size: 0.9em;
+    }
+
+    .mobile-menu ul ul li a:hover {
+        background-color: #e9e9e9;
+    }
+
+    .mobile-menu ul ul {
+        display: none;
+        /* 서브메뉴는 기본적으로 숨김 */
+    }
+
+    /* 여기까지 햄버튼 */
+
+    /* 로그인 버튼 */
+    .login-btn.mobile-only {
+        display: block;
+    }
+
+    .login-btn.pc-only {
+        display: none;
+    }
+
+    .auth-buttons {
+        display: flex;
+        gap: 10px;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .auth-buttons a.btn {
+        flex: 1;
+        text-align: center;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold;
+        display: inline-block;
+        /* 중요! */
+    }
+
+    .auth-buttons a.login-btn {
+        background-color: #007bff;
+    }
+
+    .auth-buttons a.signup-btn {
+        background-color: #6a5acd;
+    }
+
+    /* 여기까지 로그인버튼 */
+
+    .swiper {
+        max-width: 412px;
+        max-height: 112px;
+    }
+
+    .swiper img {
+        max-width: 412px;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .menu02 {
+        display: none;
+    }
+
+    .mobile-slide {
+        width: 412px;
+        height: 112px;
+    }
+
+    .pc-swiper {
+        display: none;
+    }
+
+    .mobile-slide img {
+        /* width: 100%; */
+        height: 112px;
+    }
+
+    .post-slide {
+        display: none;
+    }
+
+    .noti .notice {
+        overflow: hidden;
+        font-size: 10px;
+        max-width: 412px;
+        height: auto;
+    }
+
+
+    .notice .notice-tab {
+        width: 100%;
+        max-width: 100%;
+        max-height: 130px;
+        box-sizing: border-box;
+    }
+
+    .notice-ma a {
+        display: block;
+
+    }
+
+    .notice img {
+        display: none;
+    }
+
+    .noti .yutube {
+        margin-left: 0;
+    }
+
+    /* 여기서부터 유튜브 챗지피티파트 */
+
+    section .yutube-moba {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .yutube-moba img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* 여기까지 유튜브 챗지피티 파트 */
+
+    .zip {
+        display: none;
+    }
+
+    .zip-moba {
+        display: block;
+        width: 100%;
+    }
+
+    /* 여기부터 챗지피티가준zip파트코드 */
+    .zip-moba ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        /* 이미지 사이 여백 */
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        margin-top: 5px;
+    }
+
+    .zip-moba li {
+        width: 48%;
+        /* 2개씩 나란히 */
+        box-sizing: border-box;
+        margin-top: 5px;
+        display: block;
+    }
+
+    .zip-moba img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* 여기까지 챗지피다가준zip파트코드 */
+
+    .zip h2 {
+        display: none;
+    }
+
+    .zip-moba a {
+        display: block;
+    }
+
+    .notice .yutube {
+        display: block;
+    }
+
+    section .art {
+        display: none;
+    }
+
+    section .art-moba {
+        margin-top: 10px;
+        display: block;
+    }
+
+    .art img {
+        /* width: 412px;
+        height: 134px;
+        display: flex;
+        flex-direction: column;
+        display: block; */
+        display: none;
+    }
+
+    .btnA {
+        display: none;
+    }
+
+    .btnB {
+        display: none;
+    }
+
+    .footer-all {
+        padding: 20px 10px;
+        /* 기본 여백 줄이기 */
+        height: 215px;
+    }
+
+    .foot-top {
+        display: flex;
+        gap: 5px;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .footer-logo img {
+        max-height: 30px;
+        /* 로고 크기 줄이기 */
+        margin: 5px;
+    }
+
+    .footer-p p {
+        font-size: 12px;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+
+}
+
+
+
+@media all and (max-width:480px) {}
+
+/* ---------------- */

@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>청년다옴</title>
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="inner">
+            <header>
+                <h1><img src="./imgs/다옴로고헤더.png" alt="로고"></h1>
+                <nav>
+                    <div class="menu">
+                        <ul class="ab01">
+                            <li><a href="#">김해청년다옴</a>
+                                <div class="hover-menu01">
+                                    <ul>
+                                        <li><a href="#">샌터소개</a></li>
+                                        <li><a href="#">함께하는사람들</a></li>
+                                        <li><a href="#">센터일정</a></li>
+                                        <li><a href="#">협력기관</a></li>
+                                        <li><a href="#">오시는 길</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">공지사항</a></li>
+                            <li class="ab02"><a href="#">신청 대관</a>
+                                <div class="hover-menu02">
+                                    <ul>
+                                        <li><a href="#">사업소게</a></li>
+                                        <li><a href="#">사업신청</a></li>
+                                        <li><a href="#">공간대관</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="ab03"><a href="#">청년정보</a>
+                                <div class="hover-menu03">
+                                    <ul>
+                                        <li><a href="#">청년정책</a></li>
+                                        <li><a href="#">김해청년</a></li>
+                                        <li><a href="#">청년공간 및 단체</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="ab04"><a href="#">다옴소식</a>
+                                <div class="hover-menu04">
+                                    <ul>
+                                        <li><a href="#">다옴일기</a></li>
+                                        <li><a href="#">다옴영상</a></li>
+                                        <li><a href="#">청년 서포터즈단</a></li>
+                                        <li><a href="#">보도자료</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="ab05"><a href="#">청년열정공장</a>
+                                <div class="hover-menu05">
+                                    <ul>
+                                        <li><a href="#">청년열정공장 소게</a></li>
+                                        <li><a href="#">활동신청</a></li>
+                                        <li><a href="#">활동사진</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="ab06"><a href="#">소통하기</a>
+                                <div class="hover-menu06">
+                                    <ul>
+                                        <li><a href="#">1:1 질문</a></li>
+                                        <li><a href="#">자주하시는 질문</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+        </div>
+        <div class="login-btn pc-only">
+            <a href="#">로그인</a>
+            <a href="#">회원가입</a>
+        </div>
+        <div class="ham-btn moblie">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        </header>
+        <!-- 모바일용 메뉴 -->
+        <div class="mobile-menu">
+            <div class="mobile-logo">
+                <img src="./imgs/다옴로고헤더.png" alt="로고">
+                <h3>로그인을 해주세요</h3>
+                <p>김해 청년들의 청춘과 열정의 도움닫기</p>
+            </div>
+            <!-- <div class="auth-buttons">
+                <a href="#" class="btn signup-btn">회원가입</a>
+                <a href="#" class="login-btn">로그인</a>
+            </div> -->
+            <nav>
+                <div class="auth-buttons">
+                    <a href="#" class="btn login-btn">로그인</a>
+                    <a href="#" class="btn signup-btn">회원가입</a>
+                </div>
+                <ul class="ab01-moba">
+                    <li><a href="#">김해청년다옴</a>
+                        <ul>
+                            <li><a href="#">샌터소개</a></li>
+                            <li><a href="#">함께하는사람들</a></li>
+                            <li><a href="#">센터일정</a></li>
+                            <li><a href="#">협력기관</a></li>
+                            <li><a href="#">오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">신청 대관</a>
+                        <ul>
+                            <li><a href="#">사업소게</a></li>
+                            <li><a href="#">사업신청</a></li>
+                            <li><a href="#">공간대관</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">청년정보</a>
+                        <ul>
+                            <li><a href="#">청년정책</a></li>
+                            <li><a href="#">김해청년</a></li>
+                            <li><a href="#">청년공간 및 단체</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">다옴소식</a>
+                        <ul>
+                            <li><a href="#">다옴일기</a></li>
+                            <li><a href="#">다옴영상</a></li>
+                            <li><a href="#">청년 서포터즈단</a></li>
+                            <li><a href="#">보도자료</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">청년열정공장</a>
+                        <ul>
+                            <li><a href="#">청년열정공장 소게</a></li>
+                            <li><a href="#">활동신청</a></li>
+                            <li><a href="#">활동사진</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">소통하기</a>
+                        <ul>
+                            <li><a href="#">1:1 질문</a></li>
+                            <li><a href="#">자주하시는 질문</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <main>
+            <section>
+                <div class="all-slide">
+                    <!-- Slider main container -->
+                    <div class="swiper pc-swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><img src="./imgs/내잔고배너.jpg" alt="내 잔고"></div>
+                            <div class="swiper-slide"><img src="./imgs/심야식당ver1.2.1.jpg" alt="심야식당"></div>
+                            <div class="swiper-slide"><img src="./imgs/저녁걷기-슬라이드.jpg" alt="저녁걷기"></div>
+                            <!-- <div class="swiper-slide"><img src="./imgs/내_잔고-모바일.jpg" alt="저녁걷기"></div>
+                        <div class="swiper-slide"><img src="./imgs/심야식당슬라이드모바일.jpg" alt="저녁걷기"></div>
+                        <div class="swiper-slide"><img src="./imgs/저녁걷기슬라이드모바일.jpg" alt="저녁걷기"></div> -->
+                        </div>
+                        <!-- If we need pagination -->
+                        <!-- <div class="swiper-pagination"></div> -->
+
+                        <!-- If we need navigation buttons -->
+                        <!-- <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div> -->
+
+                        <!-- If we need scrollbar -->
+                        <!-- <div class="swiper-scrollbar"></div> -->
+                    </div>
+                </div>
+                <div class="mobile-slide">
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><img src="./imgs/내잔고배너.jpg" alt="내 잔고"></div>
+                            <div class="swiper-slide"><img src="./imgs/심야식당ver1.2.1.jpg" alt="심야식당"></div>
+                            <div class="swiper-slide"><img src="./imgs/저녁걷기-슬라이드.jpg" alt="저녁걷기"></div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <!-- <div class="swiper-pagination"></div> -->
+
+                        <!-- If we need navigation buttons -->
+                        <!-- <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div> -->
+
+                        <!-- If we need scrollbar -->
+                        <!-- <div class="swiper-scrollbar"></div> -->
+                    </div>
+                </div>
+                <div class="menu02">
+                    <ul class="inner">
+                        <li><a href="#"><img src="./imgs/공지사항아이콘1.png" alt="공지">
+                                <p>공지사항</p>
+                            </a>
+                        </li>
+                        <li><a href="#"><img src="./imgs/사업소게아이콘.png" alt="사업소개">
+                                <p>사업소개</p>
+                            </a>
+                        </li>
+
+                        <li><a href="#"><img src="./imgs/신청서아이콘1.png" alt="사업신청">
+                                <p>사업신청</p>
+                            </a>
+                        </li>
+
+                        <li><a href="#"><img src="./imgs/청년정책icon.png" alt="청년정책">
+                                <p>청년정책</p>
+                            </a>
+                        </li>
+
+                        <li><a href="#"><img src="./imgs/공지사항아이콘1.png" alt="공간예약">
+                                <p>공간예약</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <div class="post-slide">
+                    <h2>청년센터 사업소개</h2>
+                    <p>청년과 함께하는 청년센터의 사업을 소개 합니다.</p>
+
+                    <ul>
+                        <li><a href="#"><img src="./imgs/청년다이닝.jpg" alt="다이닝"></a>
+                            <h3>청년다이닝</h3>
+                        </li>
+                        <li><a href="#"><img src="./imgs/동아리-지원샌터포스터.jpg" alt="동아리"></a>
+                            <h3>청년 동아리활동 지원사업</h3>
+                        </li>
+                        <li><a href="#"><img src="./imgs/심야식당포스터크기.jpg" alt="심야"></a>
+                            <h3>김해 심야식당</h3>
+                        </li>
+                        <li><a href="#"><img src="./imgs/저녁걷기.jpg" alt="걷기"></a>
+                            <h3>김해 저녁걷기</h3>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="noti">
+                <div class="notice">
+                    <img src="./imgs/달력.png" alt="달력">
+                    <div class="notice-tab">
+                        <ul class="notice-ma">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">다옴소식</a></li>
+                            <li><a href="#">청년정책</a></li>
+                        </ul>
+
+                        <div id="tabb">
+                            <ul>
+                                <li><a href="#">온통청년 4행시 대국민 투표 이벤트</a></li>
+                                <li><a href="#">직업체험아카데미 꿈을 이뤄 드림</a></li>
+                                <li><a href="#">나는 김해솔로 - 1호 부부 탄생</a></li>
+                                <li><a href="#">6월 휴관 안내</a></li>
+                                <li><a href="#">김해형 청년 노래대회 -가야대편</a></li>
+                            </ul>
+                        </div>
+                        <div id="tabb-02">
+                            <ul>
+                                <li><a href="#">다옴일기:청춘특강_재무설계</a></li>
+                                <li><a href="#">다옴일기:청춘특강_스테인드 글라스 원데이 클래스</a></li>
+                                <li><a href="#">다옴일기:청춘특강_영어회화 특강</a></li>
+                                <li><a href="#">다옴일기:청년상담소_원예치료</a></li>
+                                <li><a href="#">다옴일기:청춘특강_페이퍼 플라워 플래스</a></li>
+                            </ul>
+                        </div>
+                        <div id="tabb-03">
+                            <ul>
+                                <li><a href="#">모다드림 청년통장 지원사업</a></li>
+                                <li><a href="#">월드잡플러스(해외통합정보망)</a></li>
+                                <li><a href="#">청년 내일채움공제</a></li>
+                                <li><a href="#">청년도약계좌</a></li>
+                                <li><a href="#">2025 경상남도 청년도전 지원사업</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="yutube">
+                        <a href="https://youtu.be/ZmijiYRvyjY"><img src="./imgs/pc버젼유튭섬네일.jpg" alt=""></a>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="zip">
+                    <h2>청년정책 모음집</h2>
+                    <ul>
+                        <li><a href="#"><img src="./imgs/김해dmd.jpg" alt="dmd"></a>
+                            <p>로컬 메거진</p>
+                        </li>
+                        <li><a href="#"><img src="./imgs/김해청년학교5.jpg" alt="청년학교"></a>
+                            <p>김해 청년학교</p>
+                        </li>
+                        <li><a href="#"><img src="./imgs/숏폼공모전.jpg" alt="숏폼"></a>
+                            <p>김해시 숏폼 공모전</p>
+                        </li>
+                        <li><a href="#"><img src="./imgs/인구정책.jpg" alt="인구정책"></a>
+                            <p>김해시 인구정책</p>
+                        </li>
+                        <li> <a href="#"><img src="./imgs/온통청년-진짜마지막.jpg" alt="온통"></a>
+                            <p>김해 온통청년</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="zip-moba">
+                    <ul>
+                        <li><a href="#"><img src="./imgs/모바일dmd.jpg" alt="모바일"></a></li>
+                        <li><a href="#"><img src="./imgs/모바일청년학교.jpg" alt="모바일"></a></li>
+                    </ul>
+                </div>
+                <div class="yutube-moba">
+                    <a href="#"><img src="./imgs/모바일유튜브1.jpg" alt="모바일유튜브"></a>
+                </div>
+            </section>
+            <section>
+                <div class="art">
+                    <a href="#"><img src="./imgs/사업신청그림.jpg" alt="사업신청">
+                        <span class="btnA">
+                            <p>사업신청</p>
+                            <span class="a-1">청년들과 함께하는 사업신청.</span>
+                        </span>
+                    </a>
+                    <a href="#"><img src="./imgs/공간대관그림.jpg" alt="공간대관">
+                        <span class="btnB">
+                            <p>공간대관</p>
+                            <span class="a-2">청년들의 공간으로 자유로운 신청.</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="art-moba">
+                    <a href="#">
+                        <div class="img-box">
+                            <img src="./imgs/공간대관모바일.jpg" alt="공간대관">
+                            <span class="img-title01">공간대관</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="img-box">
+                            <img src="./imgs/사업신청모바일.jpg" alt="사업신청">
+                            <span class="img-title">사업신청</span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-all">
+                <div class="foot-top">
+                    <a href="#">
+                        <p>김해청년센터소개</p>
+                    </a>
+                    <a href="#">
+                        <p>개인정보처리방침</p>
+                    </a>
+                    <a href="#">
+                        <p>서비스이용약관</p>
+                    </a>
+                </div>
+                <div class="footer-logo">
+                    <img src="./imgs/다옴로고-푸터.png" alt="푸터로고">
+                    <img src="./imgs/김해시로고푸터.png" alt="김해로고">
+                    <img src="./imgs/가야대로고푸터.png" alt="가야대로고">
+                </div>
+                <div class="footer-p">
+                    <p>[50914] 경남김해시 분성로 365</p>
+                    <p>TEL:055-321-7889 / 070-4922-7868</p>
+                    <p>EMAIL:glmhaeyouthdaom@gmail.com</p>
+                    <p class="hide-on-mobile">운영시간:월~금 10:00 ~ 21:00, 토10:00 ~ 18:00(일요일 및 공휴일 휴무)</p>
+                    <p class="hide-on-mobile">대관시간:월~금 10:00 ~ 21:00, 토10:00 ~ 18:00(일요일 밎 공휴일 휴무)</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+        //  let navLinks = $('.ham-btn')
+
+
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            // direction: 'vertical',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+
+        });
+
+
+        $(document).ready(function () {
+            const tabs = ['#tabb', '#tabb-02', '#tabb-03'];
+
+            $('.notice-ma li').click(function (e) {
+                e.preventDefault(); // 링크 이동 방지
+
+                const index = $(this).index();
+
+                // 모든 탭 숨기고 선택된 탭만 보여줌
+                $('#tabb, #tabb-02, #tabb-03').hide();
+                $(tabs[index]).show();
+
+                // 선택된 메뉴 강조 (선택 사항)
+                $('.notice-ma li').removeClass('active');
+                $(this).addClass('active');
+            });
+
+            // 페이지 로드시 기본 탭만 보이게
+            $('#tabb-02, #tabb-03').hide();
+        });
+
+        $('.notice-ma li').click(function (e) {
+            e.preventDefault();
+
+            // 탭 전환
+            let index = $(this).index();
+            $('#tabb, #tabb-02, #tabb-03').hide();
+            ['#tabb', '#tabb-02', '#tabb-03'][index] && $(['#tabb', '#tabb-02', '#tabb-03'][index]).show();
+
+            // 클릭한 li에만 active 클래스 부여
+            $('.notice-ma li').removeClass('active');
+            $(this).addClass('active');
+        });
+
+        $(document).ready(function () {
+            // 탭 내용 제어
+            $('#tabb, #tabb-02, #tabb-03').hide();  // 모두 숨기고
+            $('#tabb').show();                      // 공지사항만 표시
+
+            // 메뉴 상태 제어
+            $('.notice-ma li').removeClass('active');
+            $('.notice-ma li:first-child').addClass('active');
+        });
+        // ------------여기까지 슬라이더-------------
+
+        // --------------여기부터 모바일 제이쿼리----------------------
+        let pcSwiper, mobileSwiper;
+
+        function setSwiper() {
+            let isMobile = $(window).width() <= 768;
+
+            if (isMobile) {
+                $('.pc-swiper').removeClass('on');
+                $('.mobile-slide').addClass('on');
+
+                if (pcSwiper) {
+                    pcSwiper.destroy(true, true);
+                    pcSwiper = null;
+                }
+
+                if (!mobileSwiper) {
+                    mobileSwiper = new Swiper('.mobile-swiper', {
+                        loop: true,
+                        navigation: {
+                            nextEl: '.mobile-swiper .swiper-button-next',
+                            prevEl: '.mobile-swiper .swiper-button-prev'
+                        }
+                    });
+                }
+
+            } else {
+                $('.mobile-slide').removeClass('on');
+                $('.pc-swiper').addClass('on');
+
+                if (mobileSwiper) {
+                    mobileSwiper.destroy(true, true);
+                    mobileSwiper = null;
+                }
+
+                if (pcSwiper) {
+                    pcSwiper = new Swiper('.pc-swiper', {
+                        loop: true,
+                        navigation: {
+                            nextEl: '.pc-swiper .swiper-button-next',
+                            prevEl: '.pc-swiper .swiper-button-prev'
+                        }
+                    });
+                }
+            }
+        }
+
+        $(document).ready(setSwiper);
+        $(window).on('resize', setSwiper);
+        // 여기까지 슬라이더
+        function toggleMobileZip() {
+            const winW = $(window).width();
+
+            if (winW <= 768) {
+                // 모바일: zip 숨기고, zip-moba 보이되 2개만
+                $('.zip').hide();
+                $('.zip-moba').show();
+
+                $('.zip-moba li').hide();            // 전체 숨기고
+                $('.zip-moba li').slice(0, 2).show(); // 처음 2개만 보여줌
+
+            } else {
+                // PC: zip 보이기, zip-moba 숨기기, li 전체 보이기
+                $('.zip').show();
+                $('.zip-moba').hide();
+                $('.zip-moba li').show();
+            }
+        }
+
+        $(document).ready(toggleMobileZip);
+        $(window).resize(toggleMobileZip)
+
+        // 여기부터 햄버튼
+        let navLinks = $('.menu>ul>li')
+        let section = $('section')
+        let curScroll = $(this).scrollTop().toFixed(0)
+
+
+        function checkHeader() {
+            let winWidth = $(window).width();
+            let curScroll = $(window).scrollTop().toFixed(0)
+            if (curScroll > 0 && winWidth >= 767) {
+                $('header').addClass('on')
+            }
+            else {
+                $('header').removeClass('on')
+            }
+        }
+        $(window).on('scroll resize', checkHeader);
+        $(document).ready(checkHeader)
+        // --------------------------
+
+        navLinks.click(function () {
+            $(this).addClass('on').siblings().removeClass('on')
+
+            if ($(window).width() < 768) {
+                $('.ham-btn, .mobile-menu').removeClass('on')
+            }
+
+            if ($('.gnb').hasClass('on')) {
+                $('.ham-btn, .mobile-menu').removeClass('on')
+            }
+        })
+        $(function () {
+            $('.ham-btn').click(function () {
+                $('.mobile-menu').toggleClass('open');
+                $(this).toggleClass('active');
+            });
+        });
+
+        $(window).on('scroll', function () {
+            var scrollTop = $(this).scrollTop();
+            var $hamBtn = $('.ham-btn.moblie'); // 클래스명 오타 체크!
+
+            if (scrollTop > 50) {
+                $hamBtn.addClass('fixed');
+            } else {
+                $hamBtn.removeClass('fixed');
+            }
+        });
+
+        // 여기까지 햄버튼
+
+        // 여기부터 아코디언코드
+        $(document).ready(function () {
+            // 햄버거 토글 (기존 코드)
+            $('.ham-btn').click(function () {
+                $(this).toggleClass('on');
+                $('.mobile-menu').toggleClass('active');
+            });
+
+            // 서브메뉴 아코디언
+            $('.mobile-menu > nav > ul > li > a').click(function (e) {
+                // 하위 ul이 있는 경우에만 기본 이벤트 막기
+                if ($(this).next('ul').length > 0) {
+                    e.preventDefault();
+
+                    const submenu = $(this).next('ul');
+
+                    // 다른 열린 메뉴 닫기 (선택 사항)
+                    $('.mobile-menu ul ul').not(submenu).slideUp();
+
+                    // 현재 클릭한 것만 토글
+                    submenu.stop().slideToggle();
+                }
+            });
+        });
+
+
+        function toggleHamburgerByWidth() {
+            if ($(window).width() <= 767) {
+                $('.ham-btn.moblie').show();
+            } else {
+                $('.ham-btn.moblie').hide();
+            }
+        }
+
+        // 문서 로드 시 한 번 실행
+        $(document).ready(function () {
+            toggleHamburgerByWidth();
+        });
+
+        // 창 크기 바뀔 때도 다시 실행
+        $(window).on('resize', function () {
+            toggleHamburgerByWidth();
+        });
+
+        // 여기까지 아코디언 코드
+    </script>
+
+</body>
+
+</html>
